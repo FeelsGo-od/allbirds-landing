@@ -1,0 +1,126 @@
+.slider {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 120px;
+
+    @media(min-width: 1025px) {
+        width: 83% !important;
+        margin: 0 auto;
+        margin-top: 24px;
+        height: 81vh !important;
+    }
+
+    & .title {
+        text-align: left;
+        margin-top: 25px;
+        overflow: hidden;
+
+        @media (max-width: 1024px) {
+            margin-top: 0;
+        }
+    }
+
+    &__content {
+        position: relative;
+        height: 100%;
+        overflow-y: hidden;
+        display: flex;
+        align-items: flex-start;
+
+        @media (max-width: 416px) {
+            margin-top: 9px;
+        }
+
+        @media (min-width: 1025px) {
+            margin-top: 9px;
+        }
+    }
+
+    &__arrow {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__arrow-img {
+        transform: rotate(-40.85deg);
+        background: #fff;
+        border: 1px solid #D3D4D5;
+        box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.25);
+        width: 48px;
+        height: 48px;
+        position: absolute;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        & img {
+            transform: rotate(34deg);
+        }
+    }
+}
+
+.slide {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 33%;
+
+    &__image {
+        width: 100%;
+        height: 50%;
+        object-fit: cover;
+
+        @media (max-width: 416px) {
+            height: 28%;
+        }
+
+        @media (min-width: 1025px) {
+            height: 74%;
+        }
+    }
+
+    &__text {
+        overflow-y: hidden;
+        & h4 {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 29px;
+            letter-spacing: 0.5px;
+            color: #212A2F;
+
+            @media (max-width: 416px) {
+                font-size: 19px;
+            }
+        }
+
+        & p {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0.5px;
+            color: #212A2F;
+        }
+    }
+
+    &__element {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        margin-left: 24px;
+
+        &:first-child {
+            margin-left: 0;
+        }
+
+        @media (max-width: 679px) {
+            margin-left: 12px; 
+        }
+    }
+}

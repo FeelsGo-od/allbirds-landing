@@ -1,0 +1,95 @@
+.bg-content {
+    &__image {
+        width: 97.6%;
+        margin-left: auto;
+        object-fit: cover;
+        height: 100%;
+    }
+
+    &__title {
+        @media (max-width: 1024px) {
+            width: 80%;
+            margin: 0 auto;
+            margin-top: 13px;
+        }
+
+        @media (min-width: 1024px) {
+            margin-top: 52px;
+        }
+    }
+
+    &__description {
+        width: 51%;
+        margin: 0 auto;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        letter-spacing: 0.5px;
+        color: #212A2F;
+
+        &.lighter {
+            font-weight: 400;
+        }
+
+        @media (max-width: 1024px) {
+            width: 88%;
+            margin: 0 auto;
+            margin-top: 7px;
+        }
+
+        @media (min-width: 1024px) {
+            margin-top: 30px;
+        }
+    }
+
+    &__buttons {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(2, auto);
+        gap: 24px;
+        margin-top: 4px;
+
+        @media (max-width: 1024px) {
+            width: 90%;
+            margin: 0 auto;
+            margin-top: 20px;
+        }
+    }
+
+    &__button {
+        background: #212A2F;
+        border: 2px solid #212A2F;
+        color: #FFFFFF;
+        padding-left: 146px;
+        padding-right: 145px;
+        display: block;
+        margin: 0 auto;
+        margin-top: 30px;
+
+        @media (max-width: 379px) {
+            padding-left: 26px;
+            padding-right: 25px;
+        }
+
+        @media (max-width: 569px) {
+            padding-left: 76px;
+            padding-right: 76px;
+        }
+    }
+
+    &__buttons &__button {
+        background: #212A2F;
+        border: 2px solid #212A2F;
+        color: #FFFFFF;
+        padding-left: 46px;
+        padding-right: 45px;
+
+        @media (max-width: 379px) {
+            padding-left: 26px;
+            padding-right: 25px;
+        }
+    }
+}

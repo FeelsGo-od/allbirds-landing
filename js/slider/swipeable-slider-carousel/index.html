@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8'>
+	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+	<title>Bricksman Slider Example</title>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<link href="https://www.cssscript.com/demo/sticky.css" rel="stylesheet" type="text/css">
+	<link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
+	<link rel='stylesheet' type='text/css' media='screen' href='css/slider.css'>
+	<link rel='stylesheet' type='text/css' media='screen' href='css/settings.css'>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+	<main>
+		<div class="header">
+			<h1>Bricksman Slider Example</h1>
+			<div style="margin:20px auto" align="center"><div id="carbon-block"></div>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2783044520727903"
+     crossorigin="anonymous"></script>
+<!-- CSSScript Demo Page -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-2783044520727903"
+     data-ad-slot="3025259193"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+			<p>A responsive, touch-enabled slider carousel written in vanilla JavaScript.</p>
+		</div>
+		<div class="slider" id="sliderBody">
+			<button id="btnPrev">🢐</button>
+			<button id="btnNext">🢒</button>
+			<div class="slide slide1">1</div>
+			<div class="slide slide2">2</div>
+			<div class="slide slide3">3</div>
+			<div class="slide slide1">4</div>
+			<div class="slide slide2">5</div>
+			<div class="slide slide3">6</div>
+			<div class="slider-navbar" id="sliderNavbar"></div>
+		</div>
+		<div id="settingsBoard">
+			<label for="switchTimer">Autoplay</label>
+			<button state="on" id="switchTimer">
+				<span id="switchTimerBuble"></span>
+			</button>
+		</div>
+	</main>
+	<script src='js/slider_main.js'></script>
+	<script src='js/slider_bar.js'></script>
+	<script src='js/slider_swipe.js'></script>
+	<script src="js/slider_settings.js"></script>
+	<script>
+try {
+  fetch(new Request("https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js", { method: 'HEAD', mode: 'no-cors' })).then(function(response) {
+    return true;
+  }).catch(function(e) {
+    var carbonScript = document.createElement("script");
+    carbonScript.src = "//cdn.carbonads.com/carbon.js?serve=CE7DC2JW&placement=wwwcssscriptcom";
+    carbonScript.id = "_carbonads_js";
+    document.getElementById("carbon-block").appendChild(carbonScript);
+  });
+} catch (error) {
+  console.log(error);
+}
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-46156385-1', 'cssscript.com');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>

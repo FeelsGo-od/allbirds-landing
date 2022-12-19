@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>allbirds</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- slider -->
+	<link rel='stylesheet' type='text/css' media='screen' href='css/slider.css'>
+	<link rel='stylesheet' type='text/css' media='screen' href='css/settings.css'>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <nav class="header__nav">
+                <ul class="header__links">
+                    <li class="header__link"><a href="">Men</a></li>
+                    <li class="header__link"><a href="">Women</a></li>
+                    <li class="header__link"><a href="">New Arrivals</a></li>
+                </ul>
+
+                <img class="header__logo logo" src="./images/logo.svg" alt="allbirds header logo">
+
+                <div class="header__mobile-hamburger">
+                    <img class="header__mobile-openBtn mobile-open" src="./images/hamburger-menu.svg"
+                        alt="open mobile menu button">
+                    <ul class="header__mobile-menu mobile-menu">
+                        <div class="header__mobile-close mobile-close">x</div>
+
+                        <li class="header__mobile-link"><a href="">Men</a></li>
+                        <li class="header__mobile-link"><a href="">Women</a></li>
+                        <li class="header__mobile-link"><a href="">New Arrivals</a></li>
+                        <li class="header__mobile-link">Sustainability</li>
+                        <li class="header__mobile-link">Stores</li>
+                        <div class="header__mobile-icons">
+                            <li class="header__mobile-icon"><img src="./images/account.svg" alt="account profile"></li>
+                            <li class="header__mobile-icon"><img src="./images/question.svg" alt="ask question"></li>
+                            <li class="header__mobile-icon"><img src="./images/cart.svg" alt="open cart"></li>
+                        </div>
+                    </ul>
+                </div>
+
+                <ul class="header__links">
+                    <li class="header__link">Sustainability</li>
+                    <li class="header__link">Stores</li>
+                    <div class="header__icons">
+                        <li class="header__icon"><img src="./images/account.svg" alt="account profile"></li>
+                        <li class="header__icon"><img src="./images/question.svg" alt="ask question"></li>
+                        <li class="header__icon"><img src="./images/cart.svg" alt="open cart"></li>
+                    </div>
+                </ul>
+            </nav>
+
+            <div class="header__video video-bg">
+                <img class="header__mobile-bg video-bg__mobile" src="./images/header-mobile.jpg"
+                    alt="allbirds mobile header">
+                <video class="video-bg__video" id="background-video" autoplay loop muted
+                    poster="https://assets.codepen.io/6093409/river.jpg">
+                    <source src="./images/video-bg/Allbirds1-compressed.mp4" type="video/mp4">
+                </video>
+                <div class="video-bg__content">
+                    <div class="video-bg__text">
+                        <h1 class="video-bg__title">The Trail Runner SWT Is Here.</h1>
+                        <h2 class="video-bg__description">Durable. Comfortable. Ready to get dirty.</h2>
+                    </div>
+                    <div class="video-bg__buttons">
+                        <button class="video-bg__button">Shop Men</button>
+                        <button class="video-bg__button">Shop Women</button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="favorites">
+            <h3 class="favorites__title title">Our Favorites</h3>
+            <ul class="favorites__menu tabs__menu">
+                <li class="favorites__link tabs__link active" data-id="1">Everyday</li>
+                <li class="favorites__link tabs__link" data-id="2">Running</li>
+                <li class="favorites__link tabs__link" data-id="3">Travel</li>
+            </ul>
+            <div class="favorites__blocks tabs__blocks tab-1 active">
+                <div class="favorites__block tabs__block">
+                    <div class="favorites__top tabs__top">
+                        <img class="favorites__bg tabs__bg" src="./images/tabs-img1.jpg"
+                            alt="favorites products category image">
+                        <div class="favorites__buttons tabs__buttons">
+                            <button class="favorites__button tabs__button">Shop Men</button>
+                            <button class="favorites__button tabs__button">Shop Women</button>
+                        </div>
+                    </div>
+                    <div class="favorites__name tabs__name">Wool Runner</div>
+                    <div class="favorites__description tabs__description">
+                        <img src="./images/tabs-img.svg" alt="product icon">
+                        Cozy Sneaker
+                    </div>
+                </div>
+                <div class="favorites__block tabs__block">
+                    <div class="favorites__top tabs__top">
+                        <img class="favorites__bg tabs__bg" src="./images/tabs-img2.jpg"
+                            alt="favorites products category image">
+                        <div class="favorites__buttons tabs__buttons">
+                            <button class="favorites__button tabs__button">Shop Men</button>
+                            <button class="favorites__button tabs__button">Shop Women</button>
+                        </div>
+                    </div>
+                    <div class="favorites__name tabs__name">Tree Runner</div>
+                    <div class="favorites__description tabs__description">
+                        <img src="./images/tabs-img2.svg" alt="product icon">
+                        Light and Breezy Sneaker
+                    </div>
+                </div>
+                <div class="favorite__block tabs__block">
+                    <div class="favorites__top tabs__top">
+                        <img class="favorites__bg tabs__bg" src="./images/tabs-img3.jpg"
+                            alt="favorites products category image">
+                        <div class="favorites__buttons tabs__buttons">
+                            <button class="favorites__button tabs__button">Shop Men</button>
+                            <button class="favorites__button tabs__button">Shop Women</button>
+                        </div>
+                    </div>
+                    <div class="favorites__name tabs__name">Wool Runner Mizzle</div>
+                    <div class="favorites__description tabs__description">
+                        <img src="./images/tabs-img3.svg" alt="product icon">
+                        Rain-Ready Sneaker
+                    </div>
+                </div>
+            </div>
+            <div class="favorites__blocks tabs__blocks tab-2">
+                <div class="favorites__block tabs__block">
+                    <div class="favorites__top tabs__top">
+                        <img class="favorites__bg tabs__bg" src="./images/tabs-img1.jpg"
+                            alt="favorites products category image">
+                        <div class="favorites__buttons tabs__buttons">
+                            <button class="favorites__button tabs__button">Shop Men</button>
+                            <button class="favorites__button tabs__button">Shop Women</button>
+                        </div>
+                    </div>
+                    <div class="favorites__name tabs__name">Wool Runner</div>
+                    <div class="favorites__description tabs__description">
+                        <img src="./images/tabs-img.svg" alt="product icon">
+                        Cozy Sneaker 2
+                    </div>
+                </div>
+                <div class="favorites__block tabs__block">
+                    <div class="favorites__top tabs__top">
+                        <img class="favorites__bg tabs__bg" src="./images/tabs-img2.jpg"
+                            alt="favorites products category image">
+                        <div class="favorites__buttons tabs__buttons">
+                            <button class="favorites__button tabs__button">Shop Men</button>
+                            <button class="favorites__button tabs__button">Shop Women</button>
+                        </div>
+                    </div>
+                    <div class="favorites__name tabs__name">Tree Runner</div>
+                    <div class="favorites__description tabs__description">
+                        <img src="./images/tabs-img2.svg" alt="product icon">
+                        Light and Breezy Sneaker 2
+                    </div>
+                </div>
+                <div class="favorite__block tabs__block">
+                    <div class="favorites__top tabs__top">
+                        <img class="favorites__bg tabs__bg" src="./images/tabs-img3.jpg"
+                            alt="favorites products category image">
+                        <div class="favorites__buttons tabs__buttons">
+                            <button class="favorites__button tabs__button">Shop Men</button>
+                            <button class="favorites__button tabs__button">Shop Women</button>
+                        </div>
+                    </div>
+                    <div class="favorites__name tabs__name">Wool Runner Mizzle</div>
+                    <div class="favorites__description tabs__description">
+                        <img src="./images/tabs-img3.svg" alt="product icon">
+                        Rain-Ready Sneaker 2
+                    </div>
+                </div>
+            </div>
+            <div class="favorites__blocks tabs__blocks tab-3">
+                <div class="favorites__block tabs__block">
+                    <div class="favorites__top tabs__top">
+                        <img class="favorites__bg tabs__bg" src="./images/tabs-img1.jpg"
+                            alt="favorites products category image">
+                        <div class="favorites__buttons tabs__buttons">
+                            <button class="favorites__button tabs__button">Shop Men</button>
+                            <button class="favorites__button tabs__button">Shop Women</button>
+                        </div>
+                    </div>
+                    <div class="favorites__name tabs__name">Wool Runner</div>
+                    <div class="favorites__description tabs__description">
+                        <img src="./images/tabs-img.svg" alt="product icon">
+                        Cozy Sneaker 3
+                    </div>
+                </div>
+                <div class="favorites__block tabs__block">
+                    <div class="favorites__top tabs__top">
+                        <img class="favorites__bg tabs__bg" src="./images/tabs-img2.jpg"
+                            alt="favorites products category image">
+                        <div class="favorites__buttons tabs__buttons">
+                            <button class="favorites__button tabs__button">Shop Men</button>
+                            <button class="favorites__button tabs__button">Shop Women</button>
+                        </div>
+                    </div>
+                    <div class="favorites__name tabs__name">Tree Runner</div>
+                    <div class="favorites__description tabs__description">
+                        <img src="./images/tabs-img2.svg" alt="product icon">
+                        Light and Breezy Sneaker 3
+                    </div>
+                </div>
+                <div class="favorite__block tabs__block">
+                    <div class="favorites__top tabs__top">
+                        <img class="favorites__bg tabs__bg" src="./images/tabs-img3.jpg"
+                            alt="favorites products category image">
+                        <div class="favorites__buttons tabs__buttons">
+                            <button class="favorites__button tabs__button">Shop Men</button>
+                            <button class="favorites__button tabs__button">Shop Women</button>
+                        </div>
+                    </div>
+                    <div class="favorites__name tabs__name">Wool Runner Mizzle</div>
+                    <div class="favorites__description tabs__description">
+                        <img src="./images/tabs-img3.svg" alt="product icon">
+                        Rain-Ready Sneaker 3
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="slogan-one bg-content">
+            <img class="bg-content__image" src="./images/slogan-one.jpg" alt="allbirds slogan image">
+            <h3 class="bg-content__title slogan-one__title title">Seasons Change. Your Shoes Don’t Have To.</h3>
+            <p class="bg-content__description">Soft and cozy wool shoes to keep you comfortable all year round.</p>
+            <div class="bg-content__buttons">
+                <button class="bg-content__button">SHOP MEN</button>
+                <button class="bg-content__button">SHOP WOMEN</button>
+            </div>
+        </section>
+
+        <div class="collections slider" id="sliderBody">
+            <h3 class="collections__title slider__title title">Shop The Collections</h3>
+            <div class="slider__content">
+                <button class="collections__arrow slider__arrow" id="btnPrev">
+                    <div class="slider__arrow-img">
+                        <img src="./images/arrow-left.svg" alt="show previous slide">
+                    </div>
+                </button>
+                <button class="collections__arrow slider__arrow" id="btnNext">
+                    <div class="slider__arrow-img">
+                        <img src="./images/arrow-right.svg" alt="show next slide">
+                    </div>
+                </button>
+                <div class="slide slide1">
+                    <a href="#" class="slide__element" style="position: relative;">
+                        <img class="slide__image" src="./images/slider1.jpg" alt="">
+                        <div class="slide__text">
+                            <h4>New Arrivals</h4>
+                            <p>The latest styles and limited edition colors that you can only find here (while they last, that is).</p>
+                        </div>
+                    </a>
+                    <a href="#" class="slide__element">
+                        <img class="slide__image" src="./images/slider2.jpg" alt="">
+                        <div class="slide__text">
+                            <h4>Natural Run Collection</h4>
+                            <p>Looking for more sustainable ways to break a sweat? We’ve got you covered from head to toe.</p>
+                        </div>
+                    </a>
+                    <a href="#" class="slide__element">
+                        <img class="slide__image" src="./images/slider3.jpg" alt="">
+                        <div class="slide__text">
+                            <h4>Fresh Long Sleeve Tee Colors...</h4>
+                            <p>It’s crisp, clean and ready for wherever the day takes you.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="slide slide2">
+                    <a href="#" class="slide__element">
+                        <img class="slide__image" src="./images/slider1.jpg" alt="">
+                        <div class="slide__text">
+                            <h4>New Arrivals</h4>
+                            <p>The latest styles and limited edition colors that you can only find here (while they last, that is).</p>
+                        </div>
+                    </a>
+                    <a href="#" class="slide__element">
+                        <img class="slide__image" src="./images/slider2.jpg" alt="">
+                        <div class="slide__text">
+                            <h4>New Arrivals</h4>
+                            <p>The latest styles and limited edition colors that you can only find here (while they last, that is).</p>
+                        </div>
+                    </a>
+                    <a href="#" class="slide__element">
+                        <img class="slide__image" src="./images/slider3.jpg" alt="">
+                        <div class="slide__text">
+                            <h4>New Arrivals</h4>
+                            <p>The latest styles and limited edition colors that you can only find here (while they last, that is).</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="slide slide3">
+                    <a href="#" class="slide__element">
+                        <img class="slide__image" src="./images/slider1.jpg" alt="">
+                        <div class="slide__text">
+                            <h4>New Arrivals</h4>
+                            <p>The latest styles and limited edition colors that you can only find here (while they last, that is).</p>
+                        </div>
+                    </a>
+                    <a href="#" class="slide__element">
+                        <img class="slide__image" src="./images/slider2.jpg" alt="">
+                        <div class="slide__text">
+                            <h4>New Arrivals</h4>
+                            <p>The latest styles and limited edition colors that you can only find here (while they last, that is).</p>
+                        </div>
+                    </a>
+                    <a href="#" class="slide__element">
+                        <img class="slide__image" src="./images/slider3.jpg" alt="">
+                        <div class="slide__text">
+                            <h4>New Arrivals</h4>
+                            <p>The latest styles and limited edition colors that you can only find here (while they last, that is).</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="slide slide1">
+                    <a href="#" class="slide__element">
+                        <img class="slide__image" src="./images/slider1.jpg" alt="">
+                        <div class="slide__text">
+                            <h4>New Arrivals</h4>
+                            <p>The latest styles and limited edition colors that you can only find here (while they last, that is).</p>
+                        </div>
+                    </a>
+                    <a href="#" class="slide__element">
+                        <img class="slide__image" src="./images/slider2.jpg" alt="">
+                        <div class="slide__text">
+                            <h4>New Arrivals</h4>
+                            <p>The latest styles and limited edition colors that you can only find here (while they last, that is).</p>
+                        </div>
+                    </a>
+                    <a href="#" class="slide__element">
+                        <img class="slide__image" src="./images/slider3.jpg" alt="">
+                        <div class="slide__text">
+                            <h4>New Arrivals</h4>
+                            <p>The latest styles and limited edition colors that you can only find here (while they last, that is).</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="slide slide2">
+                    <a href="#" class="slide__element">
+                        <img class="slide__image" src="./images/slider1.jpg" alt="">
+                        <div class="slide__text">
+                            <h4>New Arrivals</h4>
+                            <p>The latest styles and limited edition colors that you can only find here (while they last, that is).</p>
+                        </div>
+                    </a>
+                    <a href="#" class="slide__element">
+                        <img class="slide__image" src="./images/slider2.jpg" alt="">
+                        <div class="slide__text">
+                            <h4>New Arrivals</h4>
+                            <p>The latest styles and limited edition colors that you can only find here (while they last, that is).</p>
+                        </div>
+                    </a>
+                    <a href="#" class="slide__element">
+                        <img class="slide__image" src="./images/slider3.jpg" alt="">
+                        <div class="slide__text">
+                            <h4>New Arrivals</h4>
+                            <p>The latest styles and limited edition colors that you can only find here (while they last, that is).</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="slide slide3">
+                    <a href="#" class="slide__element">
+                        <img class="slide__image" src="./images/slider1.jpg" alt="">
+                        <div class="slide__text">
+                            <h4>New Arrivals</h4>
+                            <p>The latest styles and limited edition colors that you can only find here (while they last, that is).</p>
+                        </div>
+                    </a>
+                    <a href="#" class="slide__element">
+                        <img class="slide__image" src="./images/slider2.jpg" alt="">
+                        <div class="slide__text">
+                            <h4>New Arrivals</h4>
+                            <p>The latest styles and limited edition colors that you can only find here (while they last, that is).</p>
+                        </div>
+                    </a>
+                    <a href="#" class="slide__element">
+                        <img class="slide__image" src="./images/slider3.jpg" alt="">
+                        <div class="slide__text">
+                            <h4>New Arrivals</h4>
+                            <p>The latest styles and limited edition colors that you can only find here (while they last, that is).</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="slider-navbar" id="sliderNavbar"></div>
+            </div>
+        </div>
+
+        <section class="slogan-two bg-content">
+            <img class="bg-content__image" src="./images/slogan-two.jpg" alt="allbirds slogan image">
+            <h3 class="bg-content__title slogan-two__title title">Made From Nature, For Nature</h3>
+            <p class="bg-content__description lighter">We craft with planet-friendly natural materials, like merino wool and eucalyptus trees, because they're our best chance for a sustainable future.</p>
+            <button class="bg-content__button">SEE HOW</button>
+        </section>
+
+        <section class="slogan-three bg-content">
+            <img class="bg-content__image" src="./images/slogan-three.jpg" alt="allbirds slogan image">
+            <h3 class="bg-content__title slogan-three__title title">Reversing Climate Change Through Better Business</h3>
+            <p class="bg-content__description lighter">Reducing our environmental impact has been a top priority since day one. But now, we’re taking things further. Explore our overall sustainability approach, our progress thus far, and our bold list of commitments for 2025.</p>
+            <button class="bg-content__button">Our Sustainable Practices</button>
+        </section>
+
+        <section class="contact-form form">
+            <h3 class="form__title title">Want First Dibs?</h3>
+            <p class="form__description description">Join our email list and be the first to know about new limited edition products, material innovations, and lots of other fun updates.</p>
+            <form>
+                <input class="form__input" type="email" placeholder="Enter Your Email Address">
+                <button class="form__button" type="submit">SIGN UP</button>
+            </form>
+            <div class="form__notes">
+                <p class="form__note">Note: You can opt-out at any time. See our</p>
+                <div class="form__notes-links">
+                    <span class="form__link">Privacy Policy</span>
+                    <span class="form__link">and Terms</span>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer__links">
+                <div class="footer__block">
+                    <p class="footer__title">HELP</p>
+                    <ul>
+                        <li>1-888-963-8944</li>
+                        <li>1-814-251-9966 (Text)</li>
+                        <li>help@allbirds.com</li>
+                        <li>Returns/Exchanges</li>
+                        <li>FAQ/Contact Us</li>
+                        <li>Afterpay</li>
+                    </ul>
+                </div>
+                <div class="footer__block">
+                    <p class="footer__title">SHOP</p>
+                    <ul>
+                        <li>Men's Shoes</li>
+                        <li>Women's Shoes</li>
+                        <li>Men's Apparel</li>
+                        <li>Women's Apparel</li>
+                        <li>Socks</li>
+                        <li>Gift Cards</li>
+                        <li>Download the Allbirds App</li>
+                    </ul>
+                </div>
+                <div class="footer__block">
+                    <p class="footer__title">COMPANY</p>
+                    <ul>
+                        <li>Our Stores</li>
+                        <li>Our Story</li>
+                        <li>Our Materials</li>
+                        <li>Sustainability</li>
+                        <li>Partnerships</li>
+                        <li>Product Testing</li>
+                        <li>Affiliates</li>
+                        <li>Bulk Orders</li>
+                        <li>Careers</li>
+                        <li>Press</li>
+                        <li>California Transparency Act</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__info">
+                <div class="footer__txt-info">
+                    <p class="footer__title">Follow the Flock</p>
+                    <p class="footer__descr">Exclusive offers, a heads up on new things, and sightings of Allbirds in the wild. Oh, we have cute sheep, too. #weareallbirds</p>
+                </div>
+                <div class="footer__lang">
+                    <img class="footer__icon" src="./images/lang1.svg" alt="site language 1">
+                    <img class="footer__icon" src="./images/lang2.svg" alt="site language 2">
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <p>© 2021 Allbirds, Inc. All Rights Reserved. Terms, Privacy & Accessibility</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="./js/main.js" type="module"></script>
+    <!-- slider -->
+    <script src="js/slider/slider_main.js"></script>
+    <script src="./js/slider/slider_bar.js"></script>
+    <script src="./js/slider/slider_swipe.js"></script>
+</body>
+
+</html>

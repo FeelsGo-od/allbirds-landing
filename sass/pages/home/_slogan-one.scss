@@ -1,0 +1,19 @@
+.slogan-one {
+    margin-top: 138px;
+
+    @media (max-width: 1024px) {
+        margin-top: 82px;
+    }
+
+    & .title {
+        font-size: 27px;
+        line-height: 29px;
+        overflow: hidden;
+    }
+
+    & .description {
+        font-size: 16px;
+        line-height: 19px;
+        margin-top: 18px;
+    }
+}

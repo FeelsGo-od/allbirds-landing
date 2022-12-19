@@ -1,0 +1,74 @@
+// watch sass with ->  $npm run compile-sass
+
+// font Roboto(400, 700)
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+// Layouts (repeats on every page)
+@import './layouts/header';
+@import './layouts/footer';
+
+// Components (re-using same code on different places)
+@import './components/video-bg';
+@import './components/tabs';
+@import './components/bg-content';
+@import './components/slider';
+@import './components/form';
+
+// Pages (personalized styles for pages)
+@import './pages/home/favorites';
+@import './pages/home/slogan-one';
+@import './pages/home/slogan-two';
+@import './pages/home/slogan-three';
+@import './pages/home/contact-form';
+
+body {
+    width: 100vw;
+	margin: 0;
+
+    @media(min-width: 1024px) {
+        height: 100vh;
+    }
+}
+
+body,
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button {
+    padding-top: 17px;
+    padding-bottom: 15px;
+    border-radius: 2px;
+    border: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+li {
+    list-style: none;
+}
+
+.title {
+    text-align: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 42px;
+    color: #212A2F;
+}
